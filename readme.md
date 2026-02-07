@@ -1,7 +1,7 @@
 # Changes to be made
 ### Index
 * Has an about tab that needs te be deleted
-* There are color differences in the top bar of navigation depending on the page.
+* The navigation bar is slightly off when you are on home vs. education
 
 # Future updates
 * Build out skills
