@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+  <meta charset="UTF-8">
+  <title>Education</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Main JS -->
+  <script src="js/main.js" defer></script>
+</head>
+
+<body class="bg-gray-100 text-gray-900 h-full flex flex-col">
+
+  <!-- Navigation -->
+  <nav class="bg-gray-900 shadow">
+    <div class="max-w-4xl mx-auto flex gap-6 p-4 text-white">
+      <a href="index.html" class="hover:text-indigo-400">Home</a>
+      <a href="education.html" class="font-semibold border-b-2 border-indigo-400">
+        Education
+      </a>
+      <a href="skills.html" class="hover:text-indigo-400">Skills</a>
+      <a href="projects.html" class="hover:text-indigo-400">Projects</a>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="flex-1">
+    <div class="max-w-4xl mx-auto px-6 py-12">
+
+      <h1 class="text-3xl font-bold mb-8">Education</h1>
+
+      <!-- Tabs -->
+      <div class="bg-white rounded-lg shadow">
+
+        <!-- Tab Buttons -->
+        <div class="flex border-b">
+          <button
+            class="tab-btn px-6 py-3 font-semibold border-b-2 border-indigo-500 text-indigo-600"
+            onclick="showTab('certifications', this)">
+            Certifications
+          </button>
+
+          <button
+            class="tab-btn px-6 py-3 text-gray-600 hover:text-indigo-600"
+            onclick="showTab('masters', this)">
+            Master’s
+          </button>
+
+          <button
+            class="tab-btn px-6 py-3 text-gray-600 hover:text-indigo-600"
+            onclick="showTab('bachelors', this)">
+            Bachelor’s
+          </button>
+
+          <button
+            class="tab-btn px-6 py-3 text-gray-600 hover:text-indigo-600"
+            onclick="showTab('associates', this)">
+            Associate’s
+          </button>
+        </div>
+
+        <!-- Tab Content -->
+        <div class="p-6">
+
+          <!-- Certifications -->
+          <div id="certifications" class="tab-content">
+            <div class="mb-4 border rounded bg-gray-50">
+              <button class="cert-toggle w-full flex justify-between items-center p-4 text-left font-semibold">
+                Certified Penetration Tester Specialist (CPTS) — Active
+                <span class="arrow">▾</span>
+              </button>
+
+              <div class="cert-details hidden px-6 pb-4 text-gray-700">
+                <p><strong>Issuer:</strong> Hack The Box</p>
+                <p><strong>Year:</strong> 2026</p>
+                <p><strong>Focus:</strong> Offensive Security & Penetration Testing</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Masters -->
+          <div id="masters" class="tab-content hidden">
+            <h2 class="text-xl font-semibold">
+              Master of Science in Cybersecurity
+            </h2>
+            <p class="text-gray-700 mt-1">Planned / Future Enrollment</p>
+          </div>
+
+          <!-- Bachelors -->
+          <div id="bachelors" class="tab-content hidden">
+            <h2 class="text-xl font-semibold">
+              Bachelor of Science in Computer Science: Cybersecurity
+            </h2>
+            <p class="text-gray-700 mt-1">Liberty University</p>
+            <p class="text-gray-600 text-sm mt-1">Graduation: 2026</p>
+
+            <ul class="list-disc list-inside mt-4 text-gray-700">
+              <li>Network Security & Defense</li>
+              <li>Penetration Testing & Ethical Hacking</li>
+              <li>Digital Forensics</li>
+              <li>Risk Management & Compliance</li>
+            </ul>
+          </div>
+
+          <!-- Associates -->
+          <div id="associates" class="tab-content hidden">
+            <h2 class="text-xl font-semibold">
+              Associate of Interdisciplinary Studies
+            </h2>
+            <p class="text-gray-700 mt-1">
+              Liberty University Online Academy
+            </p>
+            <p class="text-gray-600 text-sm mt-1">
+              Year Completed: 2022
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+</body>
+</html>
