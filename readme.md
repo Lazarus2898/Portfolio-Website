@@ -1,5 +1,8 @@
-# In the index.html it has about... might get rid of that.
-# Color of the tab bar at the top is different on education and home.
+# Changes to be made
+### Index
+* Has an about tab that needs te be deleted
+* There are color differences in the top bar of navigation depending on the page.
 
-# Build out skills
-# Build out projects
+# Future updates
+* Build out skills
+* Build out projects
