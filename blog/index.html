@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog | Seth Whitesell</title>
+
+  <!-- Blog-specific CSS -->
+  <link rel="stylesheet" href="css/blog.css" />
+</head>
+
+<body>
+
+  <main class="blog-container">
+
+    <!-- Header -->
+    <header class="blog-header">
+      <h1>Blog</h1>
+      <p>Write-ups, notes, and technical breakdowns</p>
+    </header>
+
+    <!-- Categories -->
+    <section class="categories">
+      <h2>Categories</h2>
+
+      <div class="category-grid">
+        <a class="category-card" href="categories/HackTheBox/index.html">
+        Hack The Box Writeups
+        </a>
+
+        <button class="category-card" onclick="showCategory('general')">
+          General Security
+        </button>
+      </div>
+    </section>
+
+    <!-- Posts -->
+    <section class="posts">
+
+      <!-- Hack The Box -->
+      <div class="post-list hidden" id="htb">
+        <h2>Hack The Box Writeups</h2>
+
+        <a class="post-card" href="posts/firstPost/index.html">
+          <h3>First HTB Machine</h3>
+          <p>Initial foothold, enumeration, and privilege escalation.</p>
+        </a>
+      </div>
+
+      <!-- General -->
+      <div class="post-list hidden" id="general">
+        <h2>General Security</h2>
+
+        <p class="empty">Posts coming soon.</p>
+      </div>
+
+    </section>
+
+  </main>
+
+  <script>
+    function showCategory(categoryId) {
+      document.querySelectorAll('.post-list').forEach(section => {
+        section.classList.add('hidden');
+      });
+
+      document.getElementById(categoryId).classList.remove('hidden');
+    }
+  </script>
+<footer class="blog-footer">
+  <div class="footer-links">
+    <a href="C:/Portfolio/index.html">Home</a>
+    <a href="https://www.linkedin.com/in/seth-whitesell77824/">LinkedIn</a>
+    <a href="https://github.com/Lazarus2898" target="_blank">GitHub</a>
+  </div>
+
+  <p class="footer-text">
+    © 2026 Seth Whitesell
+  </p>
+</footer>
+
+</body>
+</html>

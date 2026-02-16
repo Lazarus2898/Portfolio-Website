@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hack The Box Writeups</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/blog.css">
+</head>
+
+<body>
+
+  <h1 class="page-title">Hack The Box Writeups</h1>
+
+  <!-- Search Bar -->
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search machine name...">
+  </div>
+
+  <!-- Post Grid -->
+  <div class="post-card-container">
+
+    <a href="./blue.html" class="post-card" data-title="Blue Windows Easy EternalBlue">
+      <h2>Blue</h2>
+      <p>Windows | Easy | EternalBlue</p>
+    </a>
+
+    <a href="./lame.html" class="post-card" data-title="Lame Linux Easy Samba">
+      <h2>Lame</h2>
+      <p>Linux | Easy | Samba Exploit</p>
+    </a>
+
+    <a href="./sauna.html" class="post-card" data-title="Sauna Windows Medium Active Directory">
+      <h2>Sauna</h2>
+      <p>Windows | Medium | Active Directory</p>
+    </a>
+
+</div>
+
+  <!-- Search Script -->
+  <script>
+    const searchInput = document.getElementById("searchInput");
+    const posts = document.querySelectorAll(".post-card");
+
+    searchInput.addEventListener("keyup", () => {
+      const query = searchInput.value.toLowerCase();
+
+      posts.forEach(post => {
+        const text = post.dataset.title.toLowerCase();
+        post.style.display = text.includes(query) ? "" : "none";
+      });
+    });
+  </script>
+<footer class="blog-footer">
+  <div class="footer-links">
+    <a href="C:/Portfolio/index.html">Home</a>
+    <a href="https://www.linkedin.com/in/seth-whitesell77824/">LinkedIn</a>
+    <a href="https://github.com/Lazarus2898" target="_blank">GitHub</a>
+  </div>
+
+  <p class="footer-text">
+    © 2026 Seth Whitesell
+  </p>
+</footer>
+</body>
+</html>

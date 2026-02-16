@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTB First Blood</title>
+  <link rel="stylesheet" href="../blog.css">
+</head>
+
+<body>
+  <main class="post-container">
+    <h1>HTB: First Blood</h1>
+    <p class="post-meta">Posted: March 2026 · Category: CTF Writeups</p>
+
+    <article>
+      <p>This box focused on privilege escalation via misconfigured sudo…</p>
+
+      <h2>Enumeration</h2>
+      <p>Initial nmap scan revealed…</p>
+    </article>
+
+    <a href="../categories/writeups.html" class="back-link">
+      ← Back to Writeups
+    </a>
+  </main>
+</body>
+</html>

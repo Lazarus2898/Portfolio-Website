@@ -1,0 +1,209 @@
+/* ============================= */
+/* GLOBAL */
+/* ============================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #111;
+}
+
+/* ============================= */
+/* LAYOUT */
+/* ============================= */
+
+.blog-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+
+.blog-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.blog-header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.blog-header p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* ============================= */
+/* CATEGORY GRID */
+/* ============================= */
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+/* Rounded Black Cards */
+
+.category-card {
+    display: block;
+    padding: 50px 20px;
+    background: #111;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* ============================= */
+/* POSTS */
+/* ============================= */
+
+.post-card {
+    display: block;
+    background: #111;
+    color: #fff;
+    padding: 30px;
+    margin-bottom: 25px;
+    text-decoration: none;
+    border-radius: 18px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.post-card h3 {
+    margin-top: 0;
+}
+
+/* ============================= */
+/* BACK BUTTON */
+/* ============================= */
+
+.back-button {
+    display: inline-block;
+    margin-bottom: 40px;
+    text-decoration: none;
+    color: #111;
+    font-weight: bold;
+}
+
+/* ============================= */
+/* SINGLE POST PAGE */
+/* ============================= */
+
+.blog-content {
+    background: #111;
+    color: #fff;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.blog-content h1 {
+    margin-top: 0;
+}
+
+.blog-content p {
+    line-height: 1.6;
+}
+
+/* ============================= */
+/* FOOTER */
+/* ============================= */
+
+.blog-footer {
+    margin-top: 100px;
+    padding: 50px 20px;
+    background: #111;          /* Dark background */
+    color: #fff;
+    text-align: center;
+}
+
+.footer-links {
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    margin: 0 14px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: opacity 0.2s ease;
+}
+
+.footer-links a:hover {
+    opacity: 0.7;
+}
+
+.footer-text {
+    font-size: 0.85rem;
+    color: #bbb;
+}
+
+/* ============================= */
+/* SEARCH BAR */
+/* ============================= */
+
+.search-bar {
+    width: 100%;
+    padding: 14px 18px;
+    margin-bottom: 40px;
+    font-size: 1rem;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.search-bar:focus {
+    border-color: #111;
+}
+
+/* Search Bar Container */
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0 60px;
+}
+
+/* Search Input */
+.search-container input {
+  width: 340px;
+  padding: 14px 18px;
+  font-size: 16px;
+
+  background-color: #ffffff;
+  color: #000000;
+
+  border: 1px solid #d1d1d1;
+  border-radius: 12px;
+
+  outline: none;
+  transition: all 0.25s ease;
+}
+
+/* Placeholder color */
+.search-container input::placeholder {
+  color: #8a8a8a;
+}
+
+/* Focus effect */
+.search-container input:focus {
+  border-color: #000000;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.15);
+}
