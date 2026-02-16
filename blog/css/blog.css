@@ -92,6 +92,13 @@ body {
     margin-top: 0;
 }
 
+.post-meta {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  color: #8a8a8a;
+}
+
 /* ============================= */
 /* BACK BUTTON */
 /* ============================= */
@@ -123,6 +130,10 @@ body {
     line-height: 1.6;
 }
 
+.page-title {
+  text-align: center;
+  margin-top: 40px;
+}
 /* ============================= */
 /* FOOTER */
 /* ============================= */
